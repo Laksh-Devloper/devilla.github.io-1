@@ -1,300 +1,465 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Devendra Yadav</title>
-    <meta name="author" content="Devendra Yadav">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/15603274?s=460&v=4" />
-    <meta property='og:title' content="Blockchain Developer, Freelancer"/>
-    <meta property='og:description' content="I mostly work with Blockchain technologies!"/>
-    <meta property='og:url' content="https://www.devilla.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/15603274?s=460&v=4" type="image/png"></head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dev Yadav | Blockchain Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="Capture2.PNG" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.0.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="Capture1.PNG" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Devendra Yadav</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/de_villa7" class="twitter"><i class="bx bxl-twitter"></i></a>
+           <a href="https://github.com/Devilla/" class="github"><i class="bx bxl-github"></i></a>
+         
+          <a href="https://www.instagram.com/dev.endray/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/devendr-yadav" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-          <div id="particles-js"></div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/15603274?s=460&v=4) center;"></div>
-      <div id="userbio" style="display: block;">Hey, I am Devendra. 👋</div>
-      <p id="singleline"> Blockchain Dev. </p>
-      <div id="about">
-                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; </span>
-                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; India</span>
-                <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Muellners</span>
-                <div class="socials">
-                <span style="display:block;">
-                        <a href="https://github.com/devilla" target="_blank" class="socials">
-                            <svg height="15" class="octicon octicon-mark-github mr-1 v-align-middle" fill="#ffffff" aria-label="GitHub" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-                        </a>
-                </span>
-                <span style="display:block;"><a href="https://www.twitter.com/de_villa7" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:block;">
-                    <a href="mailto: devilla@gmail.com" target="_blank" class="socials" aria-label="Email: devilla@gmail.com">
-                    <svg height="15" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.9434 1.52996L16.9243 15.7574C16.7018 16.7662 16.1009 17.011 15.2627 16.5362L10.6637 13.1463L8.44574 15.2826C8.20095 15.5274 7.99325 15.7351 7.51851 15.7351L7.84489 11.0545L16.368 3.35475C16.7389 3.02836 16.2864 2.84292 15.7968 3.1693L5.26349 9.80084L0.723777 8.38403C-0.262794 8.07249 -0.285048 7.39746 0.931477 6.92272L18.6675 0.0834836C19.4909 -0.21323 20.2104 0.283765 19.9434 1.52996Z" fill="#ffffff"/></svg>
-                    </a>
-                </span>
-                <!-- <span style="display:none !important;"><a href="https://www.medium.com/@null/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span> -->
-                </div>
-                </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Devendra Yadav</h1>
+      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Blockchain Developer"></span></p>
     </div>
-    <div id="display">
-      <div id="work">
-          <h1>About.</h1>
-          <p>
-            I am a passionate Blockchain Developer from India with a strong interest in Open-Source.
-            I’m currently building several open-source blockchain and crypto related projects, for example Cryptolend, Ethswap, Provably Fair etc. I hold a Bachelor of Technology ( B. Tech ) degree in Computer Science and Engineering.
-            I mostly work on Blockchain development with Solidity and JavaScript frameworks. I have multiple years of professional remote working experience and have worked in distributed but tight-knit teams that span multiple continents across the globe.
-            <br>
-            <br>
-            I have contributed to some of the big Open Source projects by <b style="color:powderblue;">ENS domains, Bancor Network , AvaLabs</b> etc. I am also a startup enthusiast and have multiple years of experience in building tech startups from scratch.
-            <br>
-            <br>
-            Along with my Full-time job, I also worked as a Freelancer with multiple international clients including some companies like <b style="color:powderblue;">Blocklendr, Crypto Gambling Foundation, Bc.game, Stake.com, Primedice, crypto.games</b>, etc.
-            <br>
-            <br>
-            I am Fully-committed to designing and developing innovative materials. I am highly self-motivated, enthusiastic and always willing to learn more.
-                <p>
-                </p>
+  </section><!-- End Hero -->
 
-                <div>
-                        <ul style="display: table;margin: 10 auto;padding: 10px;list-style-type:circle;">
-                            <li>I mostly work on DeFi platforms using <b style="color:powderblue;">Ethereum Blockchain</b>.</li>
-                            <li>Proficient in working with <b style="color:powderblue;">Solidity</b> and <b style="color:powderblue;">Truffle suite</b>.</li>
-                            <li>Skills:- <b style="color:powderblue;">Blockchain, Ethereum, Smart Contracts and Fullstack Developer.</b>.</li>
-                            <li>Proficient in building decentralised exchanges (Dexs) and lending platforms similar to Uniswap and Aave.
-                            <!-- <li>Past experience with <b style="color:powderblue;">𝗠𝗘𝗥𝗡 ( 𝗠𝗼𝗻𝗴𝗼𝗗𝗕, 𝗘𝘅𝗽𝗿𝗲𝘀𝘀. 𝗷𝘀, 𝗥𝗲𝗮𝗰𝘁, 𝗮𝗻𝗱 𝗡𝗼𝗱𝗲. 𝗷𝘀 )</b> stack at <b style="color:powderblue;">useinfluence.co</b>.</li> -->
-                          </ul>
-                </div>
+  <main id="main">
 
-        <div id="blog_section">
-                <h1>Work.</h1>
-                <div id="blogs">
-                  <a href="https://devilla.github.io/EthSwap/" target="_blank">
-                      <section>
-                          <img src="assets/Ethswap.png">
-                          <div class="blog_container">
-                              <div class="section_title">EthSwap</div>
-                              <div class="about_section">
-                                  An Ethereum based Exchange for various Token Swaps.
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
-                <div id="blogs">
-                  <a href="https://blocklendr.herokuapp.com/home" target="_blank">
-                      <section>
-                          <img src="assets/blocklendr.png">
-                          <div class="blog_container">
-                              <div class="section_title">Blocklendr</div>
-                              <div class="about_section">
-                                  An Ethereum based Lending Platform like Aave.
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
-                <div id="blogs">
-                  <a href="https://cryptogambling.org/" target="_blank">
-                      <section>
-                          <img src="assets/provablyfair.webp">
-                          <div class="blog_container">
-                              <div class="section_title">Crypto Gambling Foundation</div>
-                              <div class="about_section">
-                                "Through the revolutionary concept of provably fair gaming, we want to change the way people perceive the online gambling industry."
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
-                <div id="blogs">
-                  <a href="https://provably-fair.github.io/bcgame/" target="_blank">
-                      <section>
-                          <img src="assets/bcgame-provablyfair-tool.png">
-                          <div class="blog_container">
-                              <div class="section_title">Bc.game verification tool</div>
-                              <div class="about_section">
-                              An Open Source tool for online casino i.e. bc.game that enables the player to verify each bet result for various games and make sure you are not being cheated!
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
-                <div id="blogs">
-                  <a href="https://github.com/bancorprotocol/sdk/graphs/contributors" target="_blank">
-                      <section>
-                          <img src="assets/bancor.jpeg">
-                          <div class="blog_container">
-                              <div class="section_title">Bancor Protocol</div>
-                              <div class="about_section">
-                                Bancor Protocol is a standard for decentralized exchange networks used to allow for the automated conversion of cryptocurrency tokens.
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
-                <div id="blogs">
-                  <a href="https://ens.domains/" target="_blank">
-                      <section>
-                          <img src="assets/ens-domains.png">
-                          <div class="blog_container">
-                              <div class="section_title">ENS domains</div>
-                              <div class="about_section">
-                                Decentralized naming for wallets, websites, & more.
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
-                <div id="blogs">
-                  <a href="https://docs.avax.network/build/tutorials/smart-contracts/using-truffle-with-the-avalanche-c-chain" target="_blank">
-                      <section>
-                          <img src="assets/AvalanceC-chainDocs.png">
-                          <div class="blog_container">
-                              <div class="section_title">Ava Labs</div>
-                              <div class="about_section">
-                                Using Truffle with the Avalanche C-Chain.
-                              </div>
-                          </div>
-                      </section>
-                  </a>
-                </div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p></p>
         </div>
 
-        <div id="footer">
-            <a>Made with ❤️ in India 🇮🇳</a>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="Capture2.PNG" class="img-fluid" alt="">
           </div>
-    </div>
-    <script type="text/javascript">
-        setTimeout(function() {
-          document.getElementById("loading").classList.add("animated");
-          document.getElementById("loading").classList.add("fadeOut");
-          setTimeout(function() {
-            document.getElementById("loading").classList.remove("animated");
-            document.getElementById("loading").classList.remove("fadeOut");
-            document.getElementById("loading").style.display = "none";
-            particlesJS("particles-js", {
-            "particles": {
-            "number": {
-              "value": 380,
-              "density": {
-                "enable": true,
-                "value_area": 800
-              }
-            },
-            "color": {
-              "value": "#ffffff"
-            },
-            "shape": {
-              "type": "circle",
-              "stroke": {
-                "width": 0,
-                "color": "#000000"
-              },
-              "polygon": {
-                "nb_sides": 5
-              },
-              "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-              }
-            },
-            "opacity": {
-              "value": 0.5,
-              "random": false,
-              "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-              }
-            },
-            "size": {
-              "value": 3,
-              "random": true,
-              "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-              }
-            },
-            "line_linked": {
-              "enable": true,
-              "distance": 150,
-              "color": "#ffffff",
-              "opacity": 0.4,
-              "width": 1
-            },
-            "move": {
-              "enable": true,
-              "speed": 6,
-              "direction": "none",
-              "random": false,
-              "straight": false,
-              "out_mode": "out",
-              "bounce": false,
-              "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-              }
-            }
-            },
-            "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-              "onhover": {
-                "enable": true,
-                "mode": "grab"
-              },
-              "onclick": {
-                "enable": true,
-                "mode": "push"
-              },
-              "resize": true
-            },
-            "modes": {
-              "grab": {
-                "distance": 140,
-                "line_linked": {
-                  "opacity": 1
-                }
-              },
-              "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
-              },
-              "repulse": {
-                "distance": 200,
-                "duration": 0.4
-              },
-              "push": {
-                "particles_nb": 4
-              },
-              "remove": {
-                "particles_nb": 2
-              }
-            }
-            },
-            "retina_detect": true
-            });
-          }, 800);
-        }, 1500);
-      </script>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Blockchain Researcher &amp; Blockchain Developer.</h3>
+            <p class="font-italic">
+              I Mostly Work With Blockchain Technologies. I Am A Passionate Blockchain Developer From India With a strong interest in open source.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Instagram:</strong> <span>@dev.endary</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Delhi</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>dev.yadav@muellners.org</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Not Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              I am currently building several open source projects like Cryptolend, Ethswap, Ava Labs. I have multiple years of professional remote working experience and have worked in tight-knit teams That span multiple continents across the Globe. Also , I have multiple years of experience in building tech startups from scratch.
+            </p>
+          </div>
+        </div>
 
-</body></html>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="136" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="238" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I am fully commited to designing and developing innovative Technologies.I am highly Self motivated, enthuaistic and willing to learn more.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Fullstack Developer<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">BlockChain<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Devendra Yadav</h4>
+              <p><em>Innovative and deadline-driven Blockchain Developer with multiple years of experience designing and developing blockchain Technologies from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Delhi, India</li>
+                <li>@dev.endary</li>
+                <li>dev.yadav@muellners.org</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor Of Technology</h4> 
+              <p>I have a very Well Known computer science Degree often called B.Tech In India. This Degree belongs to Engineering field</p>
+            </div>
+            <div class="resume-item">
+              <h4>Blockchain Developer</h4>
+              <p>I mostly work on Blockchain Developement with solidity with Javascript Frameworks. I have also contributed to some of the Biggest open source projects like ENS Domains, Bancor Network, Ava Labs etc.</p>
+            </div>
+             <div class="resume-item">
+              <h4>Fullstack Developer</h4>
+              <p>I can Build Amazing Projects From scratch on my own And i too meet All The requirements of a fullstack Developer. </p>
+            </div>
+          </div>
+         
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>I mostly Work on Defi Platforms using Etherum Blockchain, Proficient in building decentralised exchanges (dexs) and landing platforms similar to uniswap and Aave.</p>
+        </div>
+        <div class="card mb-3">
+  <img src="ethswap.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://devilla.github.io/EthSwap/" >Ethswap</a></h5>
+    <p class="card-text">An Etherum Based Exchange For Various Token Swaps.</p>
+    
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://blocklendr.herokuapp.com/home" >Blocklendr</a></h5>
+    <p class="card-text">An Etherum based Landing Platform Like Aave.</p>
+    
+  </div>
+  <img src="blocklendr.PNG" class="card-img-bottom" alt="...">
+</div>
+
+        <div class="card mb-3">
+  <img src="cryptog.PNG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://cryptogambling.org/">Crypto Gambling Foundation</a></h5>
+    <p class="card-text">Through The revolutionary concept of provably fair Gaming, we want to change the way people percieve the online gambling industry.</p>
+    
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://provably-fair.github.io/bcgame/" >BC.Game Verification Tool</a></h5>
+    <p class="card-text">An Open Source tool for online casino that is bc.game that enables the player to verify each better result for various games and make sure you are not being Cheated</p>
+    
+  </div>
+  <img src="tool.PNG" class="card-img-bottom" alt="...">
+</div>
+
+        <div class="card mb-3">
+  <img src="avalanch.PNG" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://docs.avax.network/build/tutorials/smart-contracts/using-truffle-with-the-avalanche-c-chain" >Ava Labs</a></h5>
+    <p class="card-text">Using Truffle With the Avalanche C-Chain.</p>
+    
+  </div>
+  <div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://github.com/bancorprotocol/sdk/graphs/contributors" >Bancor Protocol</a></h5>
+    <p class="card-text">Bancor Protocol is a standard for Decentralized exchange networks used to allow the automated conversion of cryptocurrency Tokens</p>
+    
+  </div>
+  <img src="bancor.jpeg" class="card-img-bottom" alt="...">
+</div>
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Drop Your Questions here: </p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Delhi, India</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>dev.yadav@muellners.org</p>
+              </div>
+
+
+
+              
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message">Error!! Failed To Send Message</div>
+                <div class="sent-message">Your Message Has Been Recorded.Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://www.instagram.com/hackerlaksh22/">Laksh</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+<!-- Email = dev.yadav@muellners.org
+BirthDate = 4 May 1995
+City = Delhi, India -->
